@@ -4,6 +4,7 @@
 	"description": "API project for freeCodeCamp",
 	"main": "server.js",
 	"scripts": {
+		"dev": "nodemon ./server.js",
 		"start": "node server.js"
 	},
 	"dependencies": {
@@ -21,5 +22,8 @@
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^2.0.13"
+	}
 }
