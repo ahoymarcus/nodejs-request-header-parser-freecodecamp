@@ -1,7 +1,6 @@
 // init project
 require('dotenv').config();
 var express = require('express');
-var dns = require('dns');
 
 
 
@@ -31,13 +30,18 @@ app.get("/api/hello", function (req, res) {
 
 
 app.get("/api/whoami", function(req, res) {
+	//console.log(req.headers['user-agent']);
+	// console.log(Object.keys(req));
+	console.log(req.headers);
+	
+	
 	
 	res.json({
-		"ipaddress": "ip",
-		"language": "lang",
-		"software": "softw"
+		"ipaddress": req.ip,
+		"language": req.headers['accept-language'],
+		"software": req.headers['user-agent']
 	});
-});
+}); 
 
 
 
