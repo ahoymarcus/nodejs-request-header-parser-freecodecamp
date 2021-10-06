@@ -53,7 +53,7 @@ Dependências:
 <br />
 
 ### Resultado final do projeto em Freecodecamp.org:               
-![Resultado final do projeto em Freecodecamp.org](/public/images/)
+![Resultado final do projeto em Freecodecamp.org](/public/images/header-parser-microservice-freecodecamp.png)
 
 
 
